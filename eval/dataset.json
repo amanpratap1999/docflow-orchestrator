@@ -1,0 +1,358 @@
+[
+  {
+    "id": "doc01",
+    "filename": "invoice_acme_office.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-2024-001",
+      "vendor_name": "Acme Corp",
+      "total_amount": 250.00
+    },
+    "text": "INVOICE\nInvoice #: INV-2024-001\nVendor: Acme Corp\nDate: 2024-05-01\nDue Date: 2024-06-01\nBill To: Enterprise Corp\n\nLine Items:\n- Ergonomic Keyboard Qty: 2 Unit Price: $75.00 Total: $150.00\n- Wireless Mouse Qty: 2 Unit Price: $50.00 Total: $100.00\n\nSubtotal: $250.00\nTax: $0.00\nTotal Amount: $250.00\nPayment Terms: Net 30"
+  },
+  {
+    "id": "doc02",
+    "filename": "invoice_apex_cloud.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-8821",
+      "vendor_name": "Apex Cloud Services",
+      "total_amount": 420.00
+    },
+    "text": "INVOICE #INV-8821\nVendor: Apex Cloud Services\nDate: 2024-05-03\nDue Date: 2024-06-03\n\nItem Description Qty Unit Price Total\nServer Hosting 2 $180.00 $360.00\nBandwidth Overage 1 $60.00 $60.00\n\nSubtotal: $420.00\nTax: $0.00\nTotal Amount: $420.00\nTerms: Net 30"
+  },
+  {
+    "id": "doc03",
+    "filename": "invoice_cloudflare_dns.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-CF-1002",
+      "vendor_name": "Cloudflare",
+      "total_amount": 200.00
+    },
+    "text": "INVOICE\nInvoice ID: INV-CF-1002\nVendor: Cloudflare\nInvoice Date: 2024-05-04\nDue Date: 2024-06-04\n\nDNS Enterprise Plan: $200.00\nSubtotal: $200.00\nTax: $0.00\nTotal Amount: $200.00"
+  },
+  {
+    "id": "doc04",
+    "filename": "invoice_slack_seats.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-SLK-441",
+      "vendor_name": "Slack Technologies",
+      "total_amount": 750.00
+    },
+    "text": "INVOICE #INV-SLK-441\nVendor: Slack Technologies\nInvoice Date: 2024-05-05\nDue Date: 2024-06-05\n\nBusiness+ Tier Subscription - 50 Seats\nSubtotal: $750.00\nTax: $0.00\nTotal Amount: $750.00\nPayment Terms: Net 30"
+  },
+  {
+    "id": "doc05",
+    "filename": "invoice_github_enterprise.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-GH-901",
+      "vendor_name": "GitHub",
+      "total_amount": 630.00
+    },
+    "text": "INVOICE\nInvoice Number: INV-GH-901\nCompany: GitHub\nDate: 2024-05-06\nDue Date: 2024-06-06\n\nGitHub Enterprise Cloud 30 seats @ $21.00 = $630.00\nSubtotal: $630.00\nTax: $0.00\nTotal Amount: $630.00"
+  },
+  {
+    "id": "doc06",
+    "filename": "invoice_datadog_monitoring.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-DD-304",
+      "vendor_name": "Datadog",
+      "total_amount": 890.00
+    },
+    "text": "INVOICE #INV-DD-304\nVendor: Datadog\nDate: 2024-05-07\nDue Date: 2024-06-07\n\nInfrastructure Monitoring & APM Pro\nSubtotal: $890.00\nTax: $0.00\nTotal Due: $890.00"
+  },
+  {
+    "id": "doc07",
+    "filename": "invoice_dell_high_val.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "invoice_number": "INV-DELL-9921",
+      "vendor_name": "Dell Technologies",
+      "total_amount": 14500.00
+    },
+    "text": "INVOICE #INV-DELL-9921\nVendor: Dell Technologies\nDate: 2024-05-08\nDue Date: 2024-06-08\n\nServer Hardware & SAN Storage Array\nSubtotal: $14,500.00\nTax: $0.00\nTotal Amount: $14,500.00\nPayment Terms: Net 30"
+  },
+  {
+    "id": "doc08",
+    "filename": "invoice_aws_heavy_compute.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "invoice_number": "INV-AWS-5501",
+      "vendor_name": "AWS",
+      "total_amount": 6200.00
+    },
+    "text": "INVOICE #INV-AWS-5501\nVendor: Amazon Web Services\nInvoice Date: 2024-05-09\nDue Date: 2024-06-09\n\nEC2 Reserved Cluster and S3 Storage Tier\nSubtotal: $6,200.00\nTax: $0.00\nTotal Amount: $6,200.00\nPayment Terms: Net 30"
+  },
+  {
+    "id": "doc09",
+    "filename": "invoice_microsoft_ea.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "invoice_number": "INV-MSFT-104",
+      "vendor_name": "Microsoft",
+      "total_amount": 25000.00
+    },
+    "text": "INVOICE #INV-MSFT-104\nVendor: Microsoft\nDate: 2024-05-10\nDue Date: 2024-06-10\n\nMicrosoft Enterprise Agreement 365 E5\nSubtotal: $25,000.00\nTax: $0.00\nTotal Amount: $25,000.00"
+  },
+  {
+    "id": "doc10",
+    "filename": "invoice_unverified_consulting.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "invoice_number": "INV-SHADOW-01",
+      "vendor_name": "Shadow Advisory Consultants",
+      "total_amount": 450.00
+    },
+    "text": "INVOICE #INV-SHADOW-01\nVendor: Shadow Advisory Consultants\nDate: 2024-05-11\nDue Date: 2024-06-11\n\nAdvisory Hours: 3 hrs @ $150.00\nSubtotal: $450.00\nTax: $0.00\nTotal Amount: $450.00\nPayment Terms: Net 15"
+  },
+  {
+    "id": "doc11",
+    "filename": "invoice_unverified_freelancer.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "invoice_number": "INV-FL-772",
+      "vendor_name": "Quick Fix Graphic Studio",
+      "total_amount": 350.00
+    },
+    "text": "INVOICE #INV-FL-772\nVendor: Quick Fix Graphic Studio\nInvoice Date: 2024-05-12\nDue Date: 2024-05-26\n\nLogo vectorized and marketing banners\nSubtotal: $350.00\nTax: $0.00\nTotal Due: $350.00"
+  },
+  {
+    "id": "doc12",
+    "filename": "invoice_atlassian_jira.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-ATL-890",
+      "vendor_name": "Atlassian",
+      "total_amount": 820.00
+    },
+    "text": "INVOICE #INV-ATL-890\nVendor: Atlassian\nDate: 2024-05-13\nDue Date: 2024-06-13\n\nJira Software & Confluence Cloud Standard\nSubtotal: $820.00\nTax: $0.00\nTotal Amount: $820.00\nTerms: Net 30"
+  },
+  {
+    "id": "doc13",
+    "filename": "access_salesforce_read.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "request_id": "REQ-101",
+      "employee_name": "Marcus Chen",
+      "requested_system": "SALESFORCE",
+      "access_level": "read"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-101\nEmployee Name: Marcus Chen\nEmployee ID: EMP-55102\nDepartment: Marketing\nRequested System: Salesforce\nAccess Level: read\nBusiness Justification: View campaign pipelines and conversion tracking data."
+  },
+  {
+    "id": "doc14",
+    "filename": "access_jira_write.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "request_id": "REQ-102",
+      "employee_name": "Emily Watson",
+      "requested_system": "JIRA",
+      "access_level": "write"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-102\nEmployee Name: Emily Watson\nEmployee ID: EMP-22019\nDepartment: Product Management\nRequested System: Jira\nAccess Level: write\nBusiness Justification: Create and groom product backlogs and sprint tickets."
+  },
+  {
+    "id": "doc15",
+    "filename": "access_github_read.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "request_id": "REQ-103",
+      "employee_name": "Liam Patel",
+      "requested_system": "GITHUB",
+      "access_level": "read"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-103\nEmployee Name: Liam Patel\nEmployee ID: EMP-33410\nDepartment: QA\nRequested System: GitHub\nAccess Level: read\nBusiness Justification: Review test automation scripts and open QA bug reports."
+  },
+  {
+    "id": "doc16",
+    "filename": "access_snowflake_read.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "request_id": "REQ-104",
+      "employee_name": "Sophia Zhang",
+      "requested_system": "SNOWFLAKE",
+      "access_level": "read"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-104\nEmployee Name: Sophia Zhang\nEmployee ID: EMP-44912\nDepartment: Finance Analytics\nRequested System: Snowflake\nAccess Level: read\nBusiness Justification: Run financial reconciliation queries and quarterly audit reports."
+  },
+  {
+    "id": "doc17",
+    "filename": "access_aws_admin.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "request_id": "REQ-105",
+      "employee_name": "Sarah Connor",
+      "requested_system": "AWS",
+      "access_level": "admin"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-105\nEmployee Name: Sarah Connor\nEmployee ID: EMP-11204\nDepartment: Site Reliability\nRequested System: AWS\nAccess Level: admin\nBusiness Justification: Full root administrator privileges needed for emergency disaster recovery drill."
+  },
+  {
+    "id": "doc18",
+    "filename": "access_snowflake_admin.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "request_id": "REQ-106",
+      "employee_name": "Robert Taylor",
+      "requested_system": "SNOWFLAKE",
+      "access_level": "admin"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-106\nEmployee Name: Robert Taylor\nEmployee ID: EMP-19402\nDepartment: Data Platform\nRequested System: Snowflake\nAccess Level: admin\nBusiness Justification: Accountadmin role required for warehouse scaling and grant management."
+  },
+  {
+    "id": "doc19",
+    "filename": "access_prod_db_admin.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "request_id": "REQ-107",
+      "employee_name": "Michael Chang",
+      "requested_system": "PROD DATABASE",
+      "access_level": "admin"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-107\nEmployee Name: Michael Chang\nEmployee ID: EMP-22104\nDepartment: Core Platform\nRequested System: Prod Database\nAccess Level: admin\nBusiness Justification: Execute schema migration and index rebuilds on core PostgreSQL cluster."
+  },
+  {
+    "id": "doc20",
+    "filename": "access_salesforce_write.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "request_id": "REQ-108",
+      "employee_name": "Jessica Alba",
+      "requested_system": "SALESFORCE",
+      "access_level": "write"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-108\nEmployee Name: Jessica Alba\nEmployee ID: EMP-30491\nDepartment: Customer Success\nRequested System: Salesforce\nAccess Level: write\nBusiness Justification: Update customer accounts, record renewal notes and contract terms."
+  },
+  {
+    "id": "doc21",
+    "filename": "access_kubernetes_admin.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "request_id": "REQ-109",
+      "employee_name": "Daniel Craig",
+      "requested_system": "KUBERNETES",
+      "access_level": "admin"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-109\nEmployee Name: Daniel Craig\nEmployee ID: EMP-40912\nDepartment: DevOps\nRequested System: Kubernetes\nAccess Level: admin\nBusiness Justification: Cluster-admin permission needed to deploy ingress controller and cert-manager."
+  },
+  {
+    "id": "doc22",
+    "filename": "access_portal_read.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "request_id": "REQ-110",
+      "employee_name": "Olivia Moore",
+      "requested_system": "INTERNAL PORTAL",
+      "access_level": "read"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-110\nEmployee Name: Olivia Moore\nEmployee ID: EMP-55019\nDepartment: Human Resources\nRequested System: Internal Portal\nAccess Level: read\nBusiness Justification: Review internal knowledge base and employee onboarding resources."
+  },
+  {
+    "id": "doc23",
+    "filename": "invoice_zoom_video.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "invoice_number": "INV-ZM-204",
+      "vendor_name": "Zoom Video",
+      "total_amount": 540.00
+    },
+    "text": "INVOICE #INV-ZM-204\nVendor: Zoom Video\nDate: 2024-05-14\nDue Date: 2024-06-14\n\nZoom Rooms & Large Meeting Addon\nSubtotal: $540.00\nTax: $0.00\nTotal Amount: $540.00\nPayment Terms: Net 30"
+  },
+  {
+    "id": "doc24",
+    "filename": "invoice_dell_laptops.txt",
+    "expected_type": "invoice",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "invoice_number": "INV-DELL-552",
+      "vendor_name": "Dell Technologies",
+      "total_amount": 3800.00
+    },
+    "text": "INVOICE #INV-DELL-552\nVendor: Dell Technologies\nDate: 2024-05-15\nDue Date: 2024-06-15\n\n2x XPS 15 Developer Edition Laptops\nSubtotal: $3,800.00\nTax: $0.00\nTotal Amount: $3,800.00\nPayment Terms: Net 30"
+  },
+  {
+    "id": "doc25",
+    "filename": "access_databricks_admin.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": true,
+    "expected_fields": {
+      "request_id": "REQ-111",
+      "employee_name": "Kevin Bacon",
+      "requested_system": "DATABRICKS",
+      "access_level": "admin"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-111\nEmployee Name: Kevin Bacon\nEmployee ID: EMP-60192\nDepartment: Data Science\nRequested System: Databricks\nAccess Level: admin\nBusiness Justification: Workspace administrator role to provision GPU compute clusters for LLM fine-tuning."
+  },
+  {
+    "id": "doc26",
+    "filename": "access_jira_read.txt",
+    "expected_type": "access_request",
+    "expected_approval_needed": false,
+    "expected_fields": {
+      "request_id": "REQ-112",
+      "employee_name": "Grace Hopper",
+      "requested_system": "JIRA",
+      "access_level": "read"
+    },
+    "text": "IT SYSTEM ACCESS REQUEST\nRequest ID: REQ-112\nEmployee Name: Grace Hopper\nEmployee ID: EMP-10001\nDepartment: Executive\nRequested System: Jira\nAccess Level: read\nBusiness Justification: Read-only access to executive roadmap dashboards and OKR metrics."
+  },
+  {
+    "id": "doc27",
+    "filename": "unknown_lunch_menu.txt",
+    "expected_type": "unknown",
+    "expected_approval_needed": true,
+    "expected_fields": {},
+    "text": "Weekly Cafeteria Lunch Menu\nMonday: Grilled Salmon Bowl\nTuesday: Korean Bibimbap\nWednesday: Artisan Margherita Pizza\nThursday: Mediterranean Falafel Wrap\nFriday: Fish & Chips"
+  },
+  {
+    "id": "doc28",
+    "filename": "unknown_office_party.txt",
+    "expected_type": "unknown",
+    "expected_approval_needed": true,
+    "expected_fields": {},
+    "text": "Team Summer BBQ & Social Event\nPlease join us at Central Park Pavilion on Friday July 18th at 4:00 PM for food, drinks, and lawn games! RSVP by June 30."
+  },
+  {
+    "id": "doc29",
+    "filename": "unknown_release_notes.txt",
+    "expected_type": "unknown",
+    "expected_approval_needed": true,
+    "expected_fields": {},
+    "text": "Product Release Notes v3.4.1\n- Fixed memory leak in websocket reconnection handler\n- Upgraded cryptographic ciphers to TLS 1.3\n- Enhanced query caching performance by 18%"
+  },
+  {
+    "id": "doc30",
+    "filename": "unknown_meeting_memo.txt",
+    "expected_type": "unknown",
+    "expected_approval_needed": true,
+    "expected_fields": {},
+    "text": "Internal Memorandum\nTo: All Engineering Staff\nFrom: Architecture Committee\nDate: May 12\nSubject: Guidelines for asynchronous messaging and service decoupled architecture."
+  }
+]

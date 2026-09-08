@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  workflow-platform:
+    build: .
+    container_name: workflow-platform-app
+    ports:
+      - "8003:8003"
+      - "8501:8501"
+    environment:
+      - PORT=8003
+      - HOST=0.0.0.0
+      - STREAMLIT_PORT=8501
+      - DATABASE_URL=sqlite:///./workflow.db
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    container_name: workflow-redis
+    ports:
+      - "6379:6379"
