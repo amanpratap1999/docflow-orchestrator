@@ -6,14 +6,24 @@
   <img src="https://img.shields.io/badge/FastAPI-0.110-009688.svg?logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Console-Streamlit%201.32-FF4B4B.svg?logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/Workflow-Finite%20State%20Machine-blueviolet.svg" alt="State Machine" />
-  <img src="https://img.shields.io/badge/Tests-7%2F7%20Passing-brightgreen.svg" alt="Tests" />
+  <a href="https://github.com/amanpratap1999/docflow-orchestrator/actions/workflows/ci.yml"><img src="https://github.com/amanpratap1999/docflow-orchestrator/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <img src="https://img.shields.io/badge/Classification-100.0%25-success.svg" alt="Classification" />
   <img src="https://img.shields.io/badge/Extraction-100.0%25-success.svg" alt="Extraction" />
   <img src="https://img.shields.io/badge/False%20Auto--Approvals-0.0%25-success.svg" alt="False Auto-Approvals" />
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
 </p>
 
-DocFlow Orchestrator is an enterprise document automation and workflow platform. It ingests unstructured business documents (PDFs, scans, text requests), classifies document types, extracts validated operational entities, enforces deterministic policy-driven human approval gates, and dispatches automated downstream integration tasks to ERP and IAM systems.
+> **Recruiter & Engineer TL;DR:** An enterprise document processing and workflow automation platform. Combines automated document classification, operational entity extraction, deterministic state machine routing, policy-driven human approval gates, and downstream ERP/IAM task dispatching with 0.0% false auto-approvals.
+
+[💻 Run Locally in 30 Seconds](#-quickstart) • [🧠 System Architecture](#-system-architecture) • [📊 Benchmark Scorecard](#-benchmark-evaluation-scorecard) • [📡 API Reference](#-api-reference)
+
+---
+
+## 📸 Application Interface
+
+<p align="center">
+  <img src="assets/screenshots/dashboard.png" alt="DocFlow Operations Platform Console" width="850" />
+</p>
 
 ---
 
